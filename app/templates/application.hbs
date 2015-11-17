@@ -1,3 +1,8 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<h2 id="title">Selamat datang di KertasKampus</h2>
+{{#if session.isAuthenticated}}
+    Logged in as {{session.currentUser.displayName}}
+    <button {{action "logout"}}>Keluar</button>
+    {{outlet}}
+{{else}}
+    <button {{action "login" "facebook"}}>Masuk dengan Facebook</button>
+{{/if}}
