@@ -1,0 +1,31 @@
+<main class="container" role="main">
+    {{#if session.isAuthenticated}}
+    <div class="col-md-6 kk-print-printer-data">
+        <h2 class="kk-printer-nama">{{model.nama}}</h2>
+        <div class="kk-printer-booked">
+            <p>{{model.booked}}/{{model.bookedMax}} slot sudah terisi.</p>
+        </div>
+        <div class="kk-printer-harga">
+            <p>{{model.harga}}rupiah/lembar</p>
+        </div>
+    </div>
+    <div class="col-md-6 kk-print-form">
+        <div class="kk-print-form-url input-group">
+            <h2>Link ke File</h2>
+            <p>Copy paste link ke file dari Google Drive, Dropbox atau file sharing lainnya yang ingin kamu print. Pastikan file bisa diakses secara publik.</p>
+            <input class="form-control" type="text" name="url" placeholder="Masukkan link ke file">
+            <button class="kk-print-btn" {{action "printBerkas" }}>Print Berkas</button>
+        </div>
+    </div>
+    {{else}}
+        <div class="col-xs-12">
+            <div class="terimakasih">
+                <h1>Sssst, khusus member.</h1>
+                <p>Halaman ini hanya bisa diakses oleh member kertaskampus.</p>
+                <p><a href="#" {{action "login" "facebook"}}>Masuk dengan facebook</a></p>
+            </div>
+        </div>
+
+    {{/if}}
+</main>
+{{outlet}}

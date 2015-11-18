@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 400;
+    color: $text-color;
+    -webkit-text-size-adjust: 100%;
+    // padding-top: 74px;
+}
+
+.container {
+    min-width: $base-container-min-width;
+    // max-width: $base-container-max-width;
+}
+
+a {
+    color: $color-blue-light;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p.lead {
+    font-weight: 400;
+}

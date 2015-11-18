@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('printer', {path: '/'}, function() {
+    this.route('new', {path: 'printer/new'});
+  });
+  this.route('print', {path: '/print/:printer_id'});
+  this.route('terimakasih');
 });
 
 export default Router;

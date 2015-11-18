@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+// body
+$base-body-bg: #fcd04b;
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size:   16px;
+$base-small-font-size:  $base-font-size * 0.875;
+$base-large-font-size:  $base-font-size * 1.875;
+$base-line-height: 1.5;
+
+// container
+$base-container-max-width: 900px;
+$base-container-min-width: 750px;
+
+// color
+$color-dark: #1E232F;
+$color-yellow: #fffb00;
+$color-blue-light: #03a9f4;
+$color-grey-dark: lighten($color-dark, 20%);
+$color-grey-light: lighten($color-dark, 40%);
+
+$text-color: rgba(0,0,0,0.8);
+
+$color-green: #40B771;
+$spacing-unit:     30px;
+
+
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;

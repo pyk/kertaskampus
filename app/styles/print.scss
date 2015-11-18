@@ -1,0 +1,21 @@
+.kk-print-printer-data, .kk-print-form {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    padding-right: 13em;
+}
+
+.kk-print-printer-data, .kk-print-form-url {
+    h2 {
+        font-weight: 600;
+    }
+
+    input {
+        padding: 2em;
+    }
+
+    .kk-print-btn {
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,67 @@
+.kk-printer-wrapper {
+    min-width: $base-container-min-width;
+    padding: 0;
+}
+
+.kk-printer {
+    text-align: center;
+    padding: 10em 2em;
+    color: rgba(0,0,0,0.8);
+    font-weight: 600;
+
+    h2 {
+        font-weight: 600;
+    }
+}
+
+.warna-1 {
+    background-color: #5cc2f1;
+}
+
+.warna-2 {
+    background-color: #fff59d;
+}
+
+.warna-3 {
+    background-color: #9993c1;
+}
+
+.warna-4 {
+    background-color: #e88a63;
+}
+
+.warna-5 {
+    background-color: #91c794;
+}
+
+.warna-6 {
+    background-color: #565f77;
+}
+
+.warna-7 {
+    background-color: #9d62c5;
+}
+
+.warna-3 {
+    background-color: #EA9292;
+}
+
+.kk-printer-book-btn {
+    padding: 1em 0;
+
+    a, span {
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 3px;
+        margin-top: 20px;
+    }
+
+    a {
+        color: #81d47d;
+    }
+
+    span {
+        color: #e66868;
+    }
+}
+

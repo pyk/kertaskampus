@@ -1,0 +1,24 @@
+<main class="container-fluid kk-printer-wrapper" role="main">
+    {{#each model as |printer| }}
+        {{!-- <div class="col-md-6 {{printer.warna}} kk-printer"> --}}
+        <div class="col-md-6 kk-printer">
+            <h2 class="kk-printer-nama">{{printer.nama}}</h2>
+            <div class="kk-printer-booked">
+                <p>{{printer.booked}}/{{printer.bookedMax}} slot sudah terisi.</p>
+            </div>
+            <div class="kk-printer-harga">
+                <p>{{printer.harga}}rupiah/lembar</p>
+            </div>
+            <div class="kk-printer-book-btn">
+                {{#if (equals printer.booked printer.bookedMax)}}
+                    <span>Printer sudah penuh</span>
+                {{else}}
+                    {{#link-to "print" printer}}Print Berkas Sekarang{{/link-to}}
+                {{/if}}
+            </div>
+        </div>
+    {{else}}
+        <p>No printer</p>
+    {{/each}}
+</main>
+{{outlet}}

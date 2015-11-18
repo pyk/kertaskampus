@@ -1,8 +1,34 @@
-<h2 id="title">Selamat datang di KertasKampus</h2>
-{{#if session.isAuthenticated}}
-    Logged in as {{session.currentUser.displayName}}
-    <button {{action "logout"}}>Keluar</button>
-    {{outlet}}
-{{else}}
-    <button {{action "login" "facebook"}}>Masuk dengan Facebook</button>
-{{/if}}
+{{!-- <header class="kk-header navbar-fixed-top"> --}}
+<header class="kk-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 kk-header-menu">
+                <!-- selectable topic -->
+                <nav class="pull-left topic">
+                    <!-- topic logo -->
+                    {{link-to "KertasKampus" "printer" class="topic-name"}}
+                </nav> 
+                
+                <!-- menu -->
+                <nav class="pull-left menu" role="navigation">
+                    <p>Print berkas kampus gak pake ribet</p>
+                </nav>
+
+                <nav class="pull-right menu" role="navigation">
+                    {{#if session.isAuthenticated}}
+                        <div class="profile">
+                            <img src="{{session.currentUser.profileImageURL}}" alt="{{session.currentUser.displayName}}">
+                            <span>{{session.currentUser.displayName}},</span> <a href="#" {{action "logout"}}>Keluar</a>
+                        </div>
+                    {{else}}
+                        <a href="#" {{action "login" "facebook"}}>Masuk dengan facebook</a>
+                    {{/if}}
+                </nav>
+            </div> 
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+</header>
+
+{{outlet}}

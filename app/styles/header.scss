@@ -1,0 +1,72 @@
+.kk-header {
+    // background-color: #3f51b5;
+    // height: 74px;
+}
+
+.kk-header-menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+// navigation
+nav a {
+    color: $color-blue-light;
+    padding-right: 1em;
+    font-weight: 600;
+    font-size: $base-font-size;
+}
+
+nav a.current {
+    // color: $color-dark;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+nav a:last-child {
+    padding-right: 0;
+}
+
+// topic logo
+.topic-name {
+    // color: $color-yellow;
+}
+
+.topic-name:hover {
+    // color: $color-yellow;
+    opacity: 0.8;
+}
+
+.topic-logo {
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 0.75em;
+    margin-top: 4px;
+}
+
+.mesos {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACnSURBVFiF7ZdLDoAgDAVb4+30Sq68kp6vrmpiQ22tJoAwSwXsGwwfJCKIMON66bjRgpFxhtDXPwS9BmRiC6+Rcg0gQPLFhOvtgDstyecEkDRSjgEtsYY0oSXXYCP1GnhLOQbAWAh4rp/OsbdfdgOjt6E3kbVOSOoxwGgmniZn6jPARBNLshvoBfQCRt6Vmt0NewHnSihPrV//E+Wfii3auxlZ/OZ2fABvG0iYGj3jvAAAAABJRU5ErkJggg==);
+}
+
+.menu {
+    margin-left: 2em;
+}
+
+.menu p {
+    // color: #fff;
+    font-weight: 600;
+}
+
+.profile img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.profile span {
+    font-weight: 600;
+}
